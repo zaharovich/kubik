@@ -1,17 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ThreeScene />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ThreeScene from "./components/ThreeScene.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    ThreeScene,
+  },
+};
 </script>
 
 <style>
@@ -21,6 +20,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0; /* Убираем отступ */
+  height: 100vh; /* Убедимся, что сцена занимает весь экран */
 }
 </style>
